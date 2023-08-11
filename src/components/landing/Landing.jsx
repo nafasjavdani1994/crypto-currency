@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import './landing.css';
 
 // Icons
-import {BiSearch} from 'react-icons/bi';
+import { BiSearch } from 'react-icons/bi';
 
 // API
 import { getCrypto } from '../../services/api';
@@ -36,24 +36,23 @@ const Landing = () => {
 
   return (
     <div className='landing__container'>
-      <div className='input-group'>
-        <input
-          className='landing__input'
-          type='text'
-          placeholder='Search ...'
-          value={searchValue}
-          onChange={handleSearch}
-        />
-        <BiSearch className='search-icon' />
-      </div>
-
-      
-
       {data.length ? (
-        <div className='coins__container'>
-          {searchedCoins.map((coin) => (
-            <Coin key={coin.id} data={coin} />
-          ))}
+        <div>
+          <div className='input-group'>
+            <input
+              className='landing__input'
+              type='text'
+              placeholder='Search ...'
+              value={searchValue}
+              onChange={handleSearch}
+            />
+            <BiSearch className='search-icon' />
+          </div>
+          <div className='coins__container'>
+            {searchedCoins.map((coin) => (
+              <Coin key={coin.id} data={coin} />
+            ))}
+          </div>
         </div>
       ) : (
         <Loader />
