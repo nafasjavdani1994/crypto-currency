@@ -1,34 +1,35 @@
 .coin__container {
-    width: 100%;
-    border-bottom: 1px solid #EADBC8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 50px 25px 30px;
+  width: 100%;
+  border-bottom: 1px solid #eadbc8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px 25px 30px;
 }
 
 .coin__image {
-    width: 30px;
-    display: inline-block;
-    margin-right: 20px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .coin__container:last-child {
-    border: 0;
+  border: 0;
 }
 
 .coin__col {
-    display : flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.7rem;
-    flex-basis: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.7rem;
+  flex-basis: 15%;
 }
 
 .coin__col small {
-    font-size: 12px;
-    color: #797A7E;
+  font-size: 12px;
+  color: #797a7e;
 }
 
 .coin__name,
@@ -37,43 +38,43 @@
 .coin__price-change-green,
 .coin__price-change-red,
 .coin__market-cap {
-    font-size: 14px;
-    
+  font-size: 14px;
 }
 
 .coin__name {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .coin__price-change-green,
 .coin__price-change-red {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .coin__price-change-green {
-color: #00AD7C;
+  color: #00ad7c;
 }
 
 .coin__price-change-red {
-    color: #c84361;
+  color: #c84361;
 }
 
 @media screen and (max-width: 755px) {
-    .coin__container {
-        flex-direction: column;
-        justify-content: left;
-        align-items: center;
-        gap: 1rem;
-    }
+  .coin__container {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+    padding: 35px;
+  }
 
-    .coin__image  {
-        width: 50px;
-        margin: 0 0 20px;
-    }
+  .coin__image {
+    width: 50px;
+    margin: 0 0 20px;
+    align-self: center;
+  }
 
-    .coin__col {
-        width: 80%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .coin__col {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

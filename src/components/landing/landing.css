@@ -49,16 +49,27 @@
 
 @media screen and (max-width: 896px) {
   .landing__container {
-    width: 90vw;
-  }
-}
-@media screen and (max-width: 797px) {
-  .landing__container {
     width: 95vw;
   }
 }
+
 @media screen and (max-width: 755px) {
+  .landing__container {
+    width: 65vw;
+  }
   .input-group {
-    width: 70%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .landing__container {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .landing__container {
+    width: 95vw;
   }
 }
