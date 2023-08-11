@@ -41,8 +41,6 @@
   width: 100%;
 }
 
-
-
 @media screen and (max-width: 1195px) {
   .landing__container {
     width: 80vw;
@@ -60,13 +58,7 @@
   }
 }
 @media screen and (max-width: 755px) {
-
-  .landing__container {
-    width: 80vw;
-  }
-
   .input-group {
     width: 70%;
   }
 }
-
