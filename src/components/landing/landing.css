@@ -1,0 +1,72 @@
+.landing__container {
+  margin: 100px 0;
+  width: 60vw;
+  min-height: 100vh;
+}
+
+.input-group {
+  border: 1px solid #eadbc8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 200ms ease;
+  margin-bottom: 30px;
+}
+
+.input-group:focus-within {
+  border: 1px solid #c84361;
+  box-shadow: rgba(200, 67, 97, 0.1) 0px 10px 15px -3px,
+    rgba(200, 67, 97, 0.05) 0px 4px 6px -2px;
+}
+
+.landing__input {
+  background-color: transparent;
+  border: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+::placeholder {
+  font-size: 0.9rem;
+}
+
+.coins__container {
+  border: 1px solid #eadbc8;
+  border-radius: 10px;
+  background: #f8f0e5;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 1195px) {
+  .landing__container {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .landing__container {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 797px) {
+  .landing__container {
+    width: 95vw;
+  }
+}
+@media screen and (max-width: 755px) {
+
+  .landing__container {
+    width: 80vw;
+  }
+
+  .input-group {
+    width: 70%;
+  }
+}
+
